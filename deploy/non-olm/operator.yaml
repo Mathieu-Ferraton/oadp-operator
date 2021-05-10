@@ -64,9 +64,9 @@ spec:
             - name: VELERO_AWS_PLUGIN_TAG
               value: ppc64le
             - name: VELERO_GCP_PLUGIN_TAG
-              value: konveyor-1.1.0
+              value: konveyor-oadp
             - name: VELERO_AZURE_PLUGIN_TAG
-              value: konveyor-1.1.0
+              value: konveyor-oadp
             - name: VELERO_CSI_PLUGIN_TAG
               value: main
             - name: VELERO_VSPHERE_PLUGIN_TAG
