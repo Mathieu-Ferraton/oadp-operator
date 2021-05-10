@@ -28,6 +28,7 @@ rules:
   - apps
   resources:
   - deployments
+  - deployments/finalizers
   - daemonsets
   - replicasets
   - statefulsets

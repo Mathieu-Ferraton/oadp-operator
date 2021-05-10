@@ -7,24 +7,24 @@ spec:
   default_velero_plugins:
   - aws
   - openshift
-  - csi
   backup_storage_locations:
   - name: default
     provider: aws
     object_storage:
-      bucket: myBucket
-      prefix: "velero"
+      bucket: velero
     config:
-      region: us-east-1
+      region: minio
       profile: "default"
+      s3_force_path_style: true
+      s3_url: "http://9.30.250.138:9000"
     credentials_secret_ref:
-      name: cloud-credentials
+      name: my-oadp-secret
       namespace: oadp-operator
   volume_snapshot_locations:
   - name: default
     provider: aws
     config:
-      region: us-west-2
+      region: minio
       profile: "default"
   enable_restic: true
-  velero_feature_flags: EnableCSI
+  use_upstream_images: false

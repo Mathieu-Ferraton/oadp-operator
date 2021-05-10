@@ -34,4 +34,7 @@ spec:
     name: oadp-{{ bsl.name }}-{{ bsl.provider }}-registry-svc
   port:
     targetPort: 5000-tcp
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
 {% endfor %}
