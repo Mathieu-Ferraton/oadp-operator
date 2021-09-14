@@ -2,7 +2,7 @@
 
 ## Overview
 
-OADP is OpenShift Application Data Protection operator. This operator sets up and installs [Velero](https://velero.io/) on the OpenShift platform.
+OADP is OpenShift API for Data Protection operator. This operator sets up and installs [Velero](https://velero.io/) on the OpenShift platform.
 
 ## Presentations
 * YouTube: [OpenShift Commons AMA: OpenShift API Data Protection (OADP) with Ceph CSI](https://www.youtube.com/watch?v=cyal8B3czLg)
@@ -293,5 +293,9 @@ By default, OADP will install the forked versions of Velero that exist under the
 |  v0.1.3        | v1.4.2         |
 |  v0.1.4        | v1.4.2         |
 |  v0.2.0        | v1.5.2         |
-
+|  v0.2.1        | v1.5.2         |
+|  v0.2.3        | v1.6.0         |
+|  v0.2.4        | v1.6.0         |
+|  v0.2.5        | v1.6.0         |
+|  v0.2.6        | v1.6.0         |
 Optionally, you can set `use_upstream_images: true` to force OADP to install the upstream Velero images (which defaults to v1.5.2) but note that this is not technically supported by OADP with the default plugins installed as it does not get tested.
