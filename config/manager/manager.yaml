@@ -31,17 +31,17 @@ spec:
           - name: REGISTRY
             value: quay.io
           - name: PROJECT
-            value: konveyor
+            value: mferrato
           - name: VELERO_REGISTRY_REPO
             value: registry
           - name: VELERO_REGISTRY_TAG
-            value: latest
+            value: ppc64le
           - name: VELERO_REPO
             value: velero
           - name: VELERO_OPENSHIFT_PLUGIN_REPO
             value: openshift-velero-plugin
           - name: VELERO_OPENSHIFT_PLUGIN_TAG
-            value: oadp-dev
+            value: ppc64le
           - name: VELERO_RESTIC_RESTORE_HELPER_REPO
             value: velero-restic-restore-helper
           - name: VELERO_AWS_PLUGIN_REPO
@@ -55,11 +55,11 @@ spec:
           - name: VELERO_VSPHERE_PLUGIN_REPO
             value: velero-plugin-for-vsphere
           - name: VELERO_TAG
-            value: konveyor-oadp
+            value: ppc64le
           - name: VELERO_RESTIC_RESTORE_HELPER_TAG
-            value: latest
+            value: ppc64le
           - name: VELERO_AWS_PLUGIN_TAG
-            value: konveyor-oadp
+            value: ppc64le
           - name: VELERO_GCP_PLUGIN_TAG
             value: konveyor-oadp
           - name: VELERO_AZURE_PLUGIN_TAG
