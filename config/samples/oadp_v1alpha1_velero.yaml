@@ -9,10 +9,10 @@ spec:
   - provider: aws
     default: true
     objectStorage:
-      bucket: my-bucket-name
-      prefix: my-prefix-name
+      bucket: my-minio-bucket
+      prefix: 'velero'
     config:
-      region: us-east-1
+      region: minio
       profile: "default"
     credential:
       name: cloud-credentials
