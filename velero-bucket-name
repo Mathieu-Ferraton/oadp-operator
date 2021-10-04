@@ -1,3 +1,3 @@
 {
-  "velero-bucket-name": velero
+  "velero-bucket-name": my-minio-bucket
 }
