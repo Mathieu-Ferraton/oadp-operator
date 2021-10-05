@@ -2,8 +2,8 @@ OADP_TEST_NAMESPACE ?= openshift-adp
 REGION ?= us-east-1
 PROVIDER ?= aws
 CREDS_SECRET_REF ?= cloud-credentials
-OADP_AWS_CRED_FILE ?= /var/run/oadp-credentials/aws-credentials
-OADP_S3_BUCKET ?= /var/run/oadp-credentials/velero-bucket-name
+OADP_AWS_CRED_FILE ?= ./aws-credentials
+OADP_S3_BUCKET ?= ./velero-bucket-name
 VELERO_INSTANCE_NAME ?= velero-sample
 
 # ENVTEST_K8S_VERSION refers to the version of kubebuilder assets to be downloaded by envtest binary.
@@ -45,14 +45,14 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 #
 # For example, running 'make bundle-build bundle-push catalog-build catalog-push' will build and push both
 # openshift.io/oadp-operator-bundle:$VERSION and openshift.io/oadp-operator-catalog:$VERSION.
-IMAGE_TAG_BASE ?= openshift.io/oadp-operator
+IMAGE_TAG_BASE ?= quay.io/mferrato/oadp-operator
 
 # BUNDLE_IMG defines the image:tag used for the bundle.
 # You can use it as an arg. (E.g make bundle-build BUNDLE_IMG=<some-registry>/<project-name-bundle>:<tag>)
 BUNDLE_IMG ?= $(IMAGE_TAG_BASE)-bundle:v$(VERSION)
 
 # Image URL to use all building/pushing image targets
-IMG ?= quay.io/konveyor/oadp-operator:latest
+IMG ?= quay.io/mferrato/oadp-operator:0.3.0-ppc64le
 # Produce CRDs that work back to Kubernetes 1.11 (no version conversion)
 CRD_OPTIONS ?= "crd:trivialVersions=true,preserveUnknownFields=false"
 
