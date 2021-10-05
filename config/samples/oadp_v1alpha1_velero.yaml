@@ -9,8 +9,8 @@ spec:
   - provider: aws
     default: true
     objectStorage:
-      bucket: velero
-      prefix: ''
+      bucket: my-minio-bucket
+      prefix: 'velero'
     config:
       region: minio
       profile: "default"

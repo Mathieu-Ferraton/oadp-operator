@@ -13,4 +13,4 @@ kind: Kustomization
 images:
 - name: controller
   newName: quay.io/mferrato/oadp-operator
-  newTag: latest
+  newTag: 0.3.0-ppc64le
