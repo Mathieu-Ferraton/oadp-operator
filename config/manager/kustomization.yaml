@@ -14,3 +14,5 @@ images:
 - name: controller
   newName: quay.io/mferrato/oadp-operator
   newTag: 0.3.0-ppc64le
+- name: controller:oadp-operator
+  newTag: 0.3.0-ppc64le
