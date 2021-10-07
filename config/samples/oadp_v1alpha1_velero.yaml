@@ -14,8 +14,8 @@ spec:
     config:
       region: minio
       profile: "default"
-      s_3_force_path_style: 'true'
-      s_3_url: "http://9.30.250.138:9000"
+      s3ForcePathStyle: 'true'
+      s3Url: "http://9.30.250.138:9000"
     credential:
       name: cloud-credentials
       key: cloud
