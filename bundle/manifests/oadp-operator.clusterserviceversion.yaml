@@ -463,27 +463,27 @@ spec:
                       - name: PROJECT
                         value: konveyor
                       - name: VELERO_REGISTRY_REPO
-                        value: registry
+                        value: registry@sha256
                       - name: VELERO_REGISTRY_TAG
                         value: 894fcca863610f3340bd333a1e3a154270d94431b6a82fb58cc14ae061492d78
                       - name: VELERO_REPO
-                        value: velero
+                        value: velero@sha256
                       - name: VELERO_OPENSHIFT_PLUGIN_REPO
-                        value: openshift-velero-plugin
+                        value: openshift-velero-plugin@sha256
                       - name: VELERO_OPENSHIFT_PLUGIN_TAG
                         value: 0c35720a5a08a96fac276c2957745237cee3519d5865130a39c60f7b8760ef3f
                       - name: VELERO_RESTIC_RESTORE_HELPER_REPO
-                        value: velero-restic-restore-helper
+                        value: velero-restic-restore-helper@sha256
                       - name: VELERO_AWS_PLUGIN_REPO
-                        value: velero-plugin-for-aws
+                        value: velero-plugin-for-aws@sha256
                       - name: VELERO_GCP_PLUGIN_REPO
-                        value: velero-plugin-for-gcp
+                        value: velero-plugin-for-gcp@sha256
                       - name: VELERO_AZURE_PLUGIN_REPO
-                        value: velero-plugin-for-microsoft-azure
+                        value: velero-plugin-for-microsoft-azure@sha256
                       - name: VELERO_KUBEVIRT_PLUGIN_REPO
                         value: kubevirt-velero-plugin
                       - name: VELERO_CSI_PLUGIN_REPO
-                        value: velero-plugin-for-csi
+                        value: velero-plugin-for-csi@sha256
                       - name: VELERO_TAG
                         value: 48b09a3d360cb180a8e788925625a618fd41a0f286c24a7ccb5d21027e36d2a4
                       - name: VELERO_RESTIC_RESTORE_HELPER_TAG
