@@ -159,7 +159,7 @@ metadata:
     capabilities: Seamless Upgrades
     categories: OpenShift Optional
     certified: "false"
-    containerImage: quay.io/konveyor/oadp-operator:latest
+    containerImage: quay.io/konveyor/oadp-operator@sha256:2a0e91d7c24b53a3071fe67e13e9810feace63c9edec5701e04846d754cfa878
     createdAt: "2020-09-08T12:21:00Z"
     description: |-
       OADP (OpenShift API for Data Protection) operator sets up and installs
