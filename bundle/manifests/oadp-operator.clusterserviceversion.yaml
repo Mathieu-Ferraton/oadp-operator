@@ -471,7 +471,7 @@ spec:
                       - name: VELERO_OPENSHIFT_PLUGIN_REPO
                         value: openshift-velero-plugin@sha256
                       - name: VELERO_OPENSHIFT_PLUGIN_TAG
-                        value: 0c35720a5a08a96fac276c2957745237cee3519d5865130a39c60f7b8760ef3f
+                        value: 77cf47ab7d64543f11d536b7b99b9cbd1904cc41960ff234527b289bcf502c2e
                       - name: VELERO_RESTIC_RESTORE_HELPER_REPO
                         value: velero-restic-restore-helper@sha256
                       - name: VELERO_AWS_PLUGIN_REPO
@@ -608,7 +608,7 @@ spec:
       name: velero
     - image: quay.io/konveyor/velero-restic-restore-helper@sha256:051c8a83f9d13daa4d19967f4204840c1113c2b208f75fbfb0b23a0559186ec6
       name: velero_restic_restore_helper
-    - image: quay.io/konveyor/openshift-velero-pluginA@sha256:0c35720a5a08a96fac276c2957745237cee3519d5865130a39c60f7b8760ef3f
+    - image: quay.io/konveyor/openshift-velero-pluginA@sha256:77cf47ab7d64543f11d536b7b99b9cbd1904cc41960ff234527b289bcf502c2e
       name: openshift_plugin
     - image: quay.io/konveyor/velero-plugin-for-aws@sha256:f86ca19250df5d0590f6ab808fd1c81fed28eba9edd9c4a285f414d54bbaca4a
       name: aws_plugin
