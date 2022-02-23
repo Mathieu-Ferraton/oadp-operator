@@ -1,0 +1,18 @@
+#! /bin/bash
+
+export OADP_TEST_NAMESPACE=openshift-adp
+export BSL_REGION=eu-west-2
+export CLUSTER_TYPE=aws
+export PROVIDER=aws
+export CLUSTER_PROFILE=aws
+#export CLUSTER_PROFILE=ibmcloud
+export OADP_CRED_DIR=/home/mathieu/src/oadp-bucket-config
+export CREDS_SECRET_REF=cloud-credentials
+export OADP_CRED_FILE=${OADP_CRED_DIR}/aws-credentials
+export OADP_BUCKET_FILE=${OADP_CRED_DIR}/aws-bucket-name
+export VELERO_INSTANCE_NAME=velero-e2e
+export E2E_TIMEOUT_MULTIPLIER=1
+export OPENSHIFT_CI=false
+export BSL_AWS_PROFILE=default
+export VSL_REGION=us-east-1
+make test-e2e
