@@ -1,0 +1,5 @@
+#!/bin/bash
+
+oc delete namespace openshift-adp
+oc delete crd $(oc get crds | grep velero.io | awk -F ' ' '{print $1}')
+oc delete crd $(oc get crds | grep oadp.openshift.io | awk -F ' ' '{print $1}')
