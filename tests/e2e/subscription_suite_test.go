@@ -15,7 +15,7 @@ import (
 	"k8s.io/utils/pointer"
 )
 
-var _ = Describe("Subscription Config Suite Test", func() {
+var _ = PDescribe("Subscription Config Suite Test", func() {
 	var _ = BeforeEach(func() {
 		log.Printf("Building dpaSpec")
 		err := dpaCR.Build(CSI)

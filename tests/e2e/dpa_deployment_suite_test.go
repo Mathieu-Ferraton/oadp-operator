@@ -17,7 +17,7 @@ import (
 	"k8s.io/utils/pointer"
 )
 
-var _ = Describe("Configuration testing for DPA Custom Resource", func() {
+var _ = PDescribe("Configuration testing for DPA Custom Resource", func() {
 	provider := Dpa.Spec.BackupLocations[0].Velero.Provider
 	bucket := Dpa.Spec.BackupLocations[0].Velero.ObjectStorage.Bucket
 	bslConfig := Dpa.Spec.BackupLocations[0].Velero.Config
